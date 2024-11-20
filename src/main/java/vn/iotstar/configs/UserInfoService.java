@@ -1,4 +1,4 @@
-package vn.iotstar.service;
+package vn.iotstar.configs;
 
 import java.util.Optional;
 
@@ -12,7 +12,6 @@ import vn.iotstar.repository.UserInfoRepository;
 
 
 public class UserInfoService implements UserDetailsService {
-    
     @Autowired
     UserInfoRepository repository;
 

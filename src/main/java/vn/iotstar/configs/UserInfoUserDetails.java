@@ -1,4 +1,4 @@
-package vn.iotstar.service;
+package vn.iotstar.configs;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -20,6 +20,7 @@ import vn.iotstar.entity.UserInfo;
 public class UserInfoUserDetails implements UserDetails {
 
     private static final long serialVersionUID = 1L;
+
     private String name;
     private String password;
     private List<GrantedAuthority> authorities;

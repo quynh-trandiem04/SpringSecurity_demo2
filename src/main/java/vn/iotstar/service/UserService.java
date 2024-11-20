@@ -9,7 +9,8 @@ import vn.iotstar.repository.UserInfoRepository;
 
 
 @Service
-public record UserService(UserInfoRepository repository, PasswordEncoder passwordEncoder) {
+public record UserService(UserInfoRepository repository, 
+                          PasswordEncoder passwordEncoder) {
 
     public String addUser(UserInfo userInfo) {
         userInfo.setPassword(passwordEncoder.encode(userInfo.getPassword()));
@@ -17,3 +18,4 @@ public record UserService(UserInfoRepository repository, PasswordEncoder passwor
         return "Thêm user thành công!";
     }
 }
+

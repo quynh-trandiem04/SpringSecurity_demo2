@@ -1,6 +1,5 @@
 package vn.iotstar.controllers;
 
-
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,3 +21,4 @@ public class UserController {
         return userService.addUser(userInfo);
     }
 }
+
